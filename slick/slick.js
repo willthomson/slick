@@ -2752,6 +2752,7 @@
     };
 
     Slick.prototype.swipeHandler = function(event) {
+        if (event.cancelable) event.preventDefault();
 
         var _ = this;
 
